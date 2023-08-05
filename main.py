@@ -43,7 +43,7 @@ def complete(text, state):
         for kwd in kwds:
             if kwd.lower().startswith(text):
                 results.append(kwd)
-                results.append(None)   
+    results.append(None)   
     return results[state]
 
 ################################################################
