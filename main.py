@@ -4,24 +4,24 @@
 import readline
 
 def hello():
-   pass
+    return "hello"
 def add():
-   pass
+    return "add"
 def change():
-   pass
+    return "change"
 def phone():
-   pass
+    return "phone"
 def show_all():
-   pass
+    return "show_all"
 def good_bye():
     exit(0)
     return None
 def show_next():
-   pass
+    return "show_next"
 def rename():
-   pass
+    return "rename"
 def find():
-   pass
+    return "find"
 def no_command(*args):
     return "Unknown command"
 
