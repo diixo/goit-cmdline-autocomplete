@@ -1,24 +1,24 @@
 
 import readline
 
-def hello():
+def hello(*args):
     return "hello"
-def add():
+def add(*args):
     return "add"
-def change():
+def change(*args):
     return "change"
-def phone():
+def phone(*args):
     return "phone"
-def show_all():
+def show_all(*args):
     return "show_all"
-def good_bye():
+def good_bye(*args):
     exit(0)
     return None
-def show_next():
+def show_next(*args):
     return "show_next"
-def rename():
+def rename(*args):
     return "rename"
-def find():
+def find(*args):
     return "find"
 def no_command(*args):
     return "Unknown command"
