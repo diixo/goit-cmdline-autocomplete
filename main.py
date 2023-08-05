@@ -34,16 +34,17 @@ COMMANDS = {
     good_bye: ("exit", "close", "end"),
     show_next: ("next",),
     rename: ("rename",),
-    find: ("find", "search"),
+    find: ("find", "see", "seek", "search"),
 }
 
 def complete(text, state):
     results = []
-    for cmd, kwds in COMMANDS.items():
-        for kwd in kwds:
-            if kwd.lower().startswith(text):
-                results.append(kwd)
-    results.append(None)   
+    if len(text) > 0:
+        for cmd, kwds in COMMANDS.items():
+            for kwd in kwds:
+                if kwd.lower().startswith(text):
+                    results.append(kwd)
+    results.append(None)
     return results[state]
 
 ################################################################
