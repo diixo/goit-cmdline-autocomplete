@@ -27,7 +27,7 @@ COMMANDS = {
     hello: ("hello", "hi"),
     add: ("add", "+"),
     change: ("change", "edit"),
-    phone: ("phone", "user"),
+    phone: ("phone", "user", "show"),
     show_all: ("showall", "all"),
     good_bye: ("exit", "close", "end"),
     show_next: ("next",),
@@ -35,6 +35,7 @@ COMMANDS = {
     find: ("find", "see", "seek", "search"),
 }
 
+################################################################
 def complete(text, state):
     results = []
     if len(text) > 0:
@@ -44,10 +45,10 @@ def complete(text, state):
                     results.append(kwd)
     results.append(None)
     return results[state]
-
 ################################################################
 readline.parse_and_bind("tab: complete")
 readline.set_completer(complete)
+################################################################
 
 def parser(text: str):
     for cmd, kwds in COMMANDS.items():
