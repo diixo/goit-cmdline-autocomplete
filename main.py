@@ -1,6 +1,4 @@
 
-#pip install pyreadline3
-
 import readline
 
 def hello():
