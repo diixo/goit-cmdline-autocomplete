@@ -27,7 +27,7 @@ COMMANDS = {
     hello: ("hello", "hi"),
     add: ("add", "+"),
     change: ("change", "edit"),
-    phone: ("phone", "user", "show"),
+    phone: ("phone", "user"),
     show_all: ("showall", "all"),
     good_bye: ("exit", "close", "end"),
     show_next: ("next",),
