@@ -7,3 +7,6 @@
 
 #### Install readline:
 ```pip install pyreadline3```
+
+#### Install readline for Linux:
+```sudo pip install readline```
