@@ -36,7 +36,7 @@ COMMANDS = {
 }
 
 ################################################################
-# add autocomplete function
+# implementation autocomplete function
 def complete(text, state):
     results = []
     if len(text) > 0:
