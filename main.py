@@ -36,6 +36,7 @@ COMMANDS = {
 }
 
 ################################################################
+# add autocomplete function
 def complete(text, state):
     results = []
     if len(text) > 0:
@@ -46,6 +47,7 @@ def complete(text, state):
     results.append(None)
     return results[state]
 ################################################################
+# set and bind autocomplete function 
 readline.parse_and_bind("tab: complete")
 readline.set_completer(complete)
 ################################################################
