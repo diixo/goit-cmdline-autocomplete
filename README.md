@@ -1,6 +1,6 @@
 ## py-cmdline-autocomplete
 
-**Python autocomplete command-line implementation by using custom commands from dictionary.**
+**Python autocomplete command-line implementation, by using custom commands from dictionary.**
 
 #### Update pip:
 ```python.exe -m pip install --upgrade pip```
