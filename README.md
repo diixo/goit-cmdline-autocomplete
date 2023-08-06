@@ -5,7 +5,7 @@
 #### Update pip:
 ```python.exe -m pip install --upgrade pip```
 
-#### Install readline:
+#### Install readline for Windows:
 ```pip install pyreadline3```
 
 #### Install readline for Linux:
